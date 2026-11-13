@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1240" font-family="Inter, Arial, sans-serif">
+  <rect width="900" height="1240" fill="#f7f8f9"/>
+  <rect width="900" height="190" fill="#0a4d31"/>
+  <circle cx="820" cy="40" r="120" fill="#0f7a4c" opacity=".6"/>
+  <text x="50" y="72" fill="#bdeccf" font-size="18" font-weight="700" letter-spacing="3">PROGRAMA DE ENFERMERÍA · UCEVA</text>
+  <text x="50" y="122" fill="#fff" font-size="40" font-weight="800">Valoración de la herida crónica</text>
+  <text x="50" y="160" fill="#e6f4ec" font-size="22">De la persona a la puntuación RESVECH 2.0 y su seguimiento</text>
+
+  <g transform="translate(50,230)">
+    <rect width="800" height="190" rx="22" fill="#fff" stroke="#e1e4e8"/>
+    <circle cx="60" cy="60" r="34" fill="#0f7a4c"/><text x="60" y="72" fill="#fff" font-size="32" font-weight="800" text-anchor="middle">1</text>
+    <text x="115" y="55" fill="#073823" font-size="26" font-weight="800">Valora a la persona</text>
+    <text x="115" y="90" fill="#2b3238" font-size="19">Antecedentes y comorbilidades (diabetes, enfermedad vascular),</text>
+    <text x="115" y="118" fill="#2b3238" font-size="19">estado nutricional, medicamentos, dolor, movilidad, hábitos,</text>
+    <text x="115" y="146" fill="#2b3238" font-size="19">apoyo familiar y capacidad de autocuidado.</text>
+  </g>
+
+  <g transform="translate(50,445)">
+    <rect width="800" height="190" rx="22" fill="#fff" stroke="#e1e4e8"/>
+    <circle cx="60" cy="60" r="34" fill="#0f7a4c"/><text x="60" y="72" fill="#fff" font-size="32" font-weight="800" text-anchor="middle">2</text>
+    <text x="115" y="55" fill="#073823" font-size="26" font-weight="800">Identifica la causa</text>
+    <text x="115" y="90" fill="#2b3238" font-size="19">Presión, pie diabético, insuficiencia venosa o arterial.</text>
+    <text x="115" y="118" fill="#2b3238" font-size="19">Explora pulsos, sensibilidad (monofilamento) e índice</text>
+    <text x="115" y="146" fill="#2b3238" font-size="19">tobillo-brazo antes de indicar compresión.</text>
+  </g>
+
+  <g transform="translate(50,660)">
+    <rect width="800" height="330" rx="22" fill="#fff" stroke="#e1e4e8"/>
+    <circle cx="60" cy="60" r="34" fill="#0f7a4c"/><text x="60" y="72" fill="#fff" font-size="32" font-weight="800" text-anchor="middle">3</text>
+    <text x="115" y="55" fill="#073823" font-size="26" font-weight="800">Mide la herida con RESVECH 2.0</text>
+    <text x="115" y="86" fill="#5b6670" font-size="18">6 ítems · puntaje 0–35 · a mayor puntaje, peor estado</text>
+    <g font-size="18" fill="#073823">
+      <rect x="40" y="115" width="230" height="80" rx="14" fill="#e6f4ec"/><text x="58" y="148" font-weight="700">1. Dimensiones</text><text x="58" y="176" fill="#5b6670">0 a 6 puntos</text>
+      <rect x="285" y="115" width="230" height="80" rx="14" fill="#e6f4ec"/><text x="303" y="148" font-weight="700">2. Profundidad</text><text x="303" y="176" fill="#5b6670">0 a 4 puntos</text>
+      <rect x="530" y="115" width="230" height="80" rx="14" fill="#e6f4ec"/><text x="548" y="148" font-weight="700">3. Bordes</text><text x="548" y="176" fill="#5b6670">0 a 4 puntos</text>
+      <rect x="40" y="210" width="230" height="80" rx="14" fill="#eef4fb"/><text x="58" y="243" font-weight="700">4. Tipo de tejido</text><text x="58" y="271" fill="#5b6670">0 a 4 puntos</text>
+      <rect x="285" y="210" width="230" height="80" rx="14" fill="#eef4fb"/><text x="303" y="243" font-weight="700">5. Exudado</text><text x="303" y="271" fill="#5b6670">0 a 3 puntos</text>
+      <rect x="530" y="210" width="230" height="80" rx="14" fill="#eef4fb"/><text x="548" y="243" font-weight="700">6. Infección/biofilm</text><text x="548" y="271" fill="#5b6670">0 a 14 puntos</text>
+    </g>
+  </g>
+
+  <g transform="translate(50,1015)">
+    <rect width="800" height="170" rx="22" fill="#0f7a4c"/>
+    <circle cx="60" cy="60" r="34" fill="#fff"/><text x="60" y="72" fill="#0f7a4c" font-size="32" font-weight="800" text-anchor="middle">4</text>
+    <text x="115" y="55" fill="#fff" font-size="26" font-weight="800">Planea y haz seguimiento</text>
+    <text x="115" y="90" fill="#e6f4ec" font-size="19">Prioriza problemas, fija metas medibles y vuelve a puntuar</text>
+    <text x="115" y="118" fill="#e6f4ec" font-size="19">en cada control: si el puntaje baja, la herida avanza hacia</text>
+    <text x="115" y="146" fill="#e6f4ec" font-size="19">la cicatrización; si sube o se estanca, ajusta el plan.</text>
+  </g>
+  <text x="450" y="1220" fill="#5b6670" font-size="15" text-anchor="middle">Fuente: Restrepo-Medrano JC. Validación para Colombia del índice RESVECH 2.0. Rev Avances en Salud 2019;3(1):8-15.</text>
+</svg>
