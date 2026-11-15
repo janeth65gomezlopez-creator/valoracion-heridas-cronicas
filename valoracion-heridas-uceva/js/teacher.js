@@ -160,7 +160,7 @@ const TEACHER = (() => {
   function fCaso(x) {
     openCrud(x ? 'Editar caso' : 'Nuevo caso', b => {
       const row = el('div', { class: 'form-row' });
-      row.appendChild(field('text', 'tipo', 'Tipo de herida', x && x.tipo)); row.appendChild(field('text', 'fuente', 'Origen', x ? x.fuente : 'SIAA')); b.appendChild(row);
+      row.appendChild(field('text', 'tipo', 'Tipo de herida', x && x.tipo)); row.appendChild(field('text', 'fuente', 'Origen (opcional)', x ? x.fuente : '')); b.appendChild(row);
       b.appendChild(field('text', 'titulo', 'Título', x && x.titulo));
       b.appendChild(field('textarea', 'motivo', 'Motivo de consulta', x && x.motivo));
       b.appendChild(field('text', 'paciente', 'Paciente', x && x.paciente));

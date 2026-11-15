@@ -366,7 +366,6 @@ RENDER.casos = function () {
 };
 function openCase(c) {
   DB.markSeen('caso', c.id); updateProgressUI();
-  const cfg = DB.getConfig();
   $('#viewerTitle').textContent = c.titulo;
   const datos = (c.datos || []).map(d => `<div class="case-data"><span>${esc(d[0])}</span><p>${esc(d[1])}</p></div>`).join('');
   const preg = (c.preguntas || []).map(q => `<li>${esc(q)}</li>`).join('');
@@ -378,7 +377,7 @@ function openCase(c) {
     ${preg ? `<h4 class="case-sub">Preguntas para tu razonamiento clínico</h4><ol class="case-q">${preg}</ol>` : ''}
     <div class="viewer-foot">
       <button class="btn btn-primary btn-sm" id="caseToResvech">Aplicar RESVECH 2.0</button>
-      <a class="btn btn-outline btn-sm" href="${esc(c.siaaUrl || cfg.siaaUrl)}" target="_blank" rel="noopener">Resolver el caso completo en el SIAA ↗</a>
+      ${c.siaaUrl ? `<a class="btn btn-outline btn-sm" href="${esc(c.siaaUrl)}" target="_blank" rel="noopener">Abrir enlace del caso ↗</a>` : ''}
     </div>`;
   $('#caseToResvech').onclick = () => { closeModal('viewerModal'); navigate('resvech'); };
   openModal('viewerModal'); RENDER.casos();

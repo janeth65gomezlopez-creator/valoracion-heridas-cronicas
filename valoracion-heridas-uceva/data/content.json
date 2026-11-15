@@ -1,5 +1,5 @@
 {
-  "version": 1794596440918,
+  "version": 1794755612112,
   "config": {
     "horasPresenciales": 32,
     "horasAutonomas": 16,
@@ -163,12 +163,12 @@
     {
       "id": "res_l2",
       "categoria": "Libros",
-      "titulo": "Valoración del paciente con úlceras crónicas (texto de estudio)",
-      "descripcion": "Módulo del curso universitario \"Cuidados y curas de heridas crónicas\" de la Universidad de Cantabria: valoración del paciente, de la lesión y del entorno, con escalas e instrumentos.",
-      "autores": "Departamento de Enfermería, Universidad de Cantabria",
-      "url": "https://web.unican.es/departamentos/enfermeria/Documents/2017-2018/M%C3%B3dulo%203%20-%20Valoraci%C3%B3n%20del%20paciente%20con%20%C3%BAlceras%20cr%C3%B3nicas.pdf",
-      "media": "pdf",
-      "fuente": "Universidad de Cantabria"
+      "titulo": "Guía para la prevención y manejo de las UPP y heridas crónicas",
+      "descripcion": "Guía del Instituto Nacional de Gestión Sanitaria (Ministerio de Sanidad de España) para unificar criterios de valoración, prevención y tratamiento de las úlceras por presión y heridas crónicas según la evidencia disponible.",
+      "autores": "Barón Burgos MM, Benítez Ramírez MM, Caparrós Cervantes A, et al. Madrid: INGESA, Ministerio de Sanidad; 2015",
+      "url": "https://ingesa.sanidad.gob.es/eu/dam/jcr:65f0eef2-7459-4389-93e6-45b8cfb32a6f/Guia_Prevencion_UPP.pdf",
+      "media": "enlace",
+      "fuente": "Ministerio de Sanidad"
     },
     {
       "id": "res_1",
@@ -371,7 +371,6 @@
       "id": "caso_pd",
       "titulo": "Pie diabético: herida en talón derecho",
       "tipo": "Pie diabético",
-      "fuente": "SIAA · Del caso al cuidado",
       "motivo": "Herida en talón derecho de 3 semanas de evolución, iniciada tras roce con calzado nuevo. Consulta ambulatoria porque no cicatriza.",
       "paciente": "Hombre de 62 años, trabaja de pie la mayor parte del día y vive solo.",
       "datos": [
@@ -423,7 +422,6 @@
       "id": "caso_iv",
       "titulo": "Insuficiencia venosa: úlcera en maléolo interno",
       "tipo": "Insuficiencia venosa",
-      "fuente": "SIAA · Del caso al cuidado",
       "motivo": "Úlcera en el maléolo interno derecho de 2 meses de evolución, con aumento progresivo de tamaño.",
       "paciente": "Mujer de 68 años, docente activa, permanece de pie entre 7 y 8 horas al día.",
       "datos": [

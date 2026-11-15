@@ -155,7 +155,7 @@ const DB = (() => {
       { id: 'res_g2', categoria: 'Guías', titulo: 'Limpieza terapéutica de heridas y piel: evidencia clínica y recomendaciones (2025)', descripcion: 'Consenso internacional del IWII sobre agentes, técnica e indicaciones para limpiar la herida y la piel perilesional como parte de la preparación del lecho.', autores: 'Haesler E, Swanson T, Ousey K, Larsen D, Sussman G — IWII', url: SIAA + '/pdfs/limpieza-terapeutica-heridas-2025.pdf', media: 'pdf', fuente: 'SIAA' },
       // Libros y textos de valoración de heridas
       { id: 'res_l1', categoria: 'Libros', titulo: 'Atención integral de las heridas crónicas (2.ª edición)', descripcion: 'Libro de referencia en español del GNEAUPP. Sus capítulos de valoración integral del paciente, valoración de la lesión e instrumentos de medida son base para este módulo.', autores: 'García-Fernández FP, Soldevilla-Ágreda JJ, Torra-Bou JE (eds.). Logroño: GNEAUPP-FSJJ; 2016. ISBN 978-84-608-5924-6', url: 'https://gneaupp.info/', media: 'enlace', fuente: 'GNEAUPP' },
-      { id: 'res_l2', categoria: 'Libros', titulo: 'Valoración del paciente con úlceras crónicas (texto de estudio)', descripcion: 'Módulo del curso universitario "Cuidados y curas de heridas crónicas" de la Universidad de Cantabria: valoración del paciente, de la lesión y del entorno, con escalas e instrumentos.', autores: 'Departamento de Enfermería, Universidad de Cantabria', url: 'https://web.unican.es/departamentos/enfermeria/Documents/2017-2018/M%C3%B3dulo%203%20-%20Valoraci%C3%B3n%20del%20paciente%20con%20%C3%BAlceras%20cr%C3%B3nicas.pdf', media: 'pdf', fuente: 'Universidad de Cantabria' },
+      { id: 'res_l2', categoria: 'Libros', titulo: 'Guía para la prevención y manejo de las UPP y heridas crónicas', descripcion: 'Guía del Instituto Nacional de Gestión Sanitaria (Ministerio de Sanidad de España) para unificar criterios de valoración, prevención y tratamiento de las úlceras por presión y heridas crónicas según la evidencia disponible.', autores: 'Barón Burgos MM, Benítez Ramírez MM, Caparrós Cervantes A, et al. Madrid: INGESA, Ministerio de Sanidad; 2015', url: 'https://ingesa.sanidad.gob.es/eu/dam/jcr:65f0eef2-7459-4389-93e6-45b8cfb32a6f/Guia_Prevencion_UPP.pdf', media: 'enlace', fuente: 'Ministerio de Sanidad' },
       // Artículos científicos (se conservan)
       { id: 'res_1', categoria: 'Artículos científicos', tema: 'Infección', titulo: 'IWII Wound Infection in Clinical Practice consensus document: 2022 update', autores: 'Swanson T, Ousey K, Haesler E, et al. — International Wound Infection Institute (IWII)', descripcion: 'Consenso internacional (Journal of Wound Care, 2022) sobre identificación, diagnóstico y tratamiento de la infección de heridas, biopelícula, limpieza, desbridamiento y uso prudente de antimicrobianos.', doi: 'https://doi.org/10.12968/jowc.2022.31.Sup12.S10', url: 'https://woundsinternational.com/wp-content/uploads/2023/05/IWII-CD-2022-web.pdf', media: 'pdf' },
       { id: 'res_2', categoria: 'Artículos científicos', tema: 'Insuficiencia venosa', titulo: 'Leg ulceration in venous and arteriovenous insufficiency: assessment and management with compression therapy', autores: 'Nair HK, Mosti G, Atkin L, et al. — World Union of Wound Healing Societies (WUWHS)', descripcion: 'Consenso internacional (Journal of Wound Care, 2024) sobre la valoración de la úlcera de pierna venosa, arterial y mixta, y el uso seguro de la terapia de compresión.', doi: 'https://doi.org/10.12968/jowc.2024.33.Sup10b.S1', url: 'https://www.journalofwoundcare.com/docs/Leg%20ulceration%20in%20venous%20and%20arteriovenous%20insuffeciency.pdf', media: 'pdf' },
@@ -187,8 +187,7 @@ const DB = (() => {
     ]);
 
     Cases.replaceAll([
-      { id: 'caso_pd', titulo: 'Pie diabético: herida en talón derecho', tipo: 'Pie diabético', fuente: 'SIAA · Del caso al cuidado',
-        motivo: 'Herida en talón derecho de 3 semanas de evolución, iniciada tras roce con calzado nuevo. Consulta ambulatoria porque no cicatriza.',
+      { id: 'caso_pd', titulo: 'Pie diabético: herida en talón derecho', tipo: 'Pie diabético',         motivo: 'Herida en talón derecho de 3 semanas de evolución, iniciada tras roce con calzado nuevo. Consulta ambulatoria porque no cicatriza.',
         paciente: 'Hombre de 62 años, trabaja de pie la mayor parte del día y vive solo.',
         datos: [
           ['Antecedentes', 'Diabetes mellitus tipo 2 de 12 años de evolución, control metabólico irregular (HbA1c 9,2 %).'],
@@ -207,8 +206,7 @@ const DB = (() => {
           'Aplica RESVECH 2.0 con los datos disponibles: ¿qué ítems puedes puntuar y qué información te falta?',
           'Formula un diagnóstico de enfermería y dos intervenciones prioritarias (incluye descarga y educación).'
         ] },
-      { id: 'caso_iv', titulo: 'Insuficiencia venosa: úlcera en maléolo interno', tipo: 'Insuficiencia venosa', fuente: 'SIAA · Del caso al cuidado',
-        motivo: 'Úlcera en el maléolo interno derecho de 2 meses de evolución, con aumento progresivo de tamaño.',
+      { id: 'caso_iv', titulo: 'Insuficiencia venosa: úlcera en maléolo interno', tipo: 'Insuficiencia venosa',         motivo: 'Úlcera en el maléolo interno derecho de 2 meses de evolución, con aumento progresivo de tamaño.',
         paciente: 'Mujer de 68 años, docente activa, permanece de pie entre 7 y 8 horas al día.',
         datos: [
           ['Antecedentes', 'Insuficiencia venosa crónica diagnosticada hace 10 años, con várices visibles en ambas piernas. Obesidad (IMC 32).'],
