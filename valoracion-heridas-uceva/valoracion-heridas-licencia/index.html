@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Valoración de heridas crónicas · UCEVA</title>
+<meta name="description" content="Página educativa con información para la valoración de pacientes con heridas crónicas — Programa de Enfermería, Unidad Central del Valle del Cauca (UCEVA).">
+<meta name="theme-color" content="#0f7a4c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/icon-192.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/extra.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 8v.01"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".6" fill="currentColor"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15.5H6.5A2.5 2.5 0 0 0 4 21z"/><path d="M4 18.5V5.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="M10 8.5v7l6-3.5z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-library" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V6a1 1 0 0 1 1-1h4v15M9 20V5M20 20 15 5l-2 .6 5 15z"/></symbol>
+    <symbol id="i-case" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7.5" width="18" height="12" rx="2"/><path d="M8 7.5V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1.5M3 12h18"/></symbol>
+    <symbol id="i-task" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></symbol>
+    <symbol id="i-eval" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3.5h6l1 3H8z"/><rect x="5" y="6.5" width="14" height="14" rx="2"/><path d="m9 13 2 2 4-4"/></symbol>
+    <symbol id="i-faq" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9.2 9a2.8 2.8 0 1 1 3.7 2.6c-.7.3-1 .8-1 1.6v.4M12 17v.01"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6.5 8 6.5 8-6.5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 10a6 6 0 1 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z"/><path d="M10 20a2 2 0 0 0 4 0"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 5 14 14M19 5 5 19"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 5-6 8-6s6.5 2 8 6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L12 17l-5.6 3.1 1.4-6.3-4.8-4.3 6.4-.6z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 15V4M8 8l4-4 4 4"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 4v11M8 11l4 4 4-4"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9.5 14.5 14.5 9.5"/><path d="M11 6.5 12.6 5a3.5 3.5 0 1 1 5 5l-1.6 1.6M13 17.5 11.4 19a3.5 3.5 0 1 1-5-5l1.6-1.6"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20h4L18 10l-4-4L4 16z"/><path d="m14.5 5.5 4 4"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7h14M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2m-9 0 1 13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1l1-13"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4 6v6c0 5 3.5 7.7 8 9 4.5-1.3 8-4 8-9V6z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="10.5" width="14" height="9.5" rx="2"/><path d="M8 10.5V8a4 4 0 1 1 8 0v2.5"/></symbol>
+    <symbol id="i-ai" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="7" width="16" height="12" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4A8 8 0 1 1 8.6 19z"/><path d="M9 9.5c0 3 2 5.3 5.5 5.5.6 0 1-.6.6-1.1l-1-1.4-1.6.5A5 5 0 0 1 9.5 10l.5-1.6-1.4-1c-.5-.4-1.1 0-1.1.6z"/></symbol>
+    <symbol id="i-teams" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 9.5 21 7v10l-5-2.5"/></symbol>
+    <symbol id="i-drive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 3 8 0 5 9-4 8H7l-4-8z"/><path d="M8 3 4 12h16"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4 10-10"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="5"/><path d="m8.5 12.5-2 8 5.5-3 5.5 3-2-8"/></symbol>
+    <symbol id="i-contrast" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 3v18a9 9 0 0 0 0-18Z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-logout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h3M16 16l4-4-4-4M9 12h11"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  </defs>
+</svg>
+
+<div id="splash">
+  <div class="splash-logo">UC</div>
+  <h1>Valoración de heridas crónicas</h1>
+  <p>Programa de Enfermería · UCEVA</p>
+  <div class="splash-bar"></div>
+</div>
+
+<div class="toast-stack" id="toastStack"></div>
+
+<!-- ============================= HEADER ============================= -->
+<header class="app-header">
+  <div class="header-left">
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú"><svg width="22" height="22"><use href="#i-menu"/></svg></button>
+    <a href="#/inicio" class="brand">
+      <div class="brand-logo">UC</div>
+      <div class="brand-text">
+        <strong>Valoración de heridas crónicas</strong>
+        <span>Cuidado de Enfermería del Adulto en Alta Complejidad · UCEVA</span>
+      </div>
+    </a>
+  </div>
+  <div class="header-search" id="headerSearch" role="search">
+    <svg width="18" height="18"><use href="#i-search"/></svg>
+    <input id="globalSearch" type="search" autocomplete="off" placeholder="Buscar temas, sesiones, artículos, casos…" aria-label="Buscar en la página" aria-controls="searchResults">
+    <button class="search-clear" id="searchClear" aria-label="Borrar búsqueda" hidden><svg width="14" height="14"><use href="#i-close"/></svg></button>
+    <div class="search-results" id="searchResults" role="listbox" hidden></div>
+  </div>
+  <div class="header-right">
+    <button class="icon-btn search-mobile-btn" id="searchMobileBtn" aria-label="Buscar"><svg width="19" height="19"><use href="#i-search"/></svg></button>
+    <button class="icon-btn" id="notifBtn" aria-label="Novedades"><svg width="19" height="19"><use href="#i-bell"/></svg><span class="badge-dot" id="notifDot"></span></button>
+    <button class="icon-btn" id="contrastBtn" aria-label="Alto contraste" title="Alto contraste"><svg width="19" height="19"><use href="#i-contrast"/></svg></button>
+    <button class="user-chip" id="userChip"><span class="user-avatar" id="userAvatar">ES</span><span id="userLabel">Invitado</span></button>
+  </div>
+</header>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<div class="app-shell">
+  <!-- ============================= MENÚ LATERAL ============================= -->
+  <aside class="sidebar" id="sidebar">
+    <p class="sidebar-section-label">Campus</p>
+    <button class="nav-item" data-route="inicio"><svg width="18" height="18"><use href="#i-home"/></svg> Inicio</button>
+    <button class="nav-item" data-route="presentacion"><svg width="18" height="18"><use href="#i-info"/></svg> Presentación</button>
+    <button class="nav-item" data-route="objetivo"><svg width="18" height="18"><use href="#i-target"/></svg> Objetivo de aprendizaje</button>
+    <button class="nav-item" data-route="programacion"><svg width="18" height="18"><use href="#i-calendar"/></svg> Programación</button>
+
+    <p class="sidebar-section-label">Aprendizaje</p>
+    <button class="nav-item" data-route="recursos"><svg width="18" height="18"><use href="#i-book"/></svg> Recursos</button>
+    <button class="nav-item" data-route="clases"><svg width="18" height="18"><use href="#i-play"/></svg> Sesiones de clase</button>
+    <button class="nav-item" data-route="biblioteca"><svg width="18" height="18"><use href="#i-library"/></svg> Biblioteca científica</button>
+    <button class="nav-item" data-route="casos"><svg width="18" height="18"><use href="#i-case"/></svg> Casos clínicos</button>
+    <button class="nav-item" data-route="resvech"><svg width="18" height="18"><use href="#i-eval"/></svg> Escala RESVECH 2.0</button>
+
+    <p class="sidebar-section-label">Organización</p>
+    <button class="nav-item" data-route="calendario"><svg width="18" height="18"><use href="#i-calendar"/></svg> Calendario</button>
+
+    <p class="sidebar-section-label">Soporte</p>
+    <button class="nav-item" data-route="faq"><svg width="18" height="18"><use href="#i-faq"/></svg> Preguntas frecuentes</button>
+    <button class="nav-item" data-route="contacto"><svg width="18" height="18"><use href="#i-mail"/></svg> Contacto docente</button>
+
+    <p class="sidebar-section-label">Mi cuenta</p>
+    <button class="nav-item" data-route="perfil"><svg width="18" height="18"><use href="#i-user"/></svg> Mi perfil</button>
+
+    <p class="sidebar-section-label" id="teacherNavLabel" style="display:none">Administración</p>
+    <button class="nav-item" data-route="docente" id="navDocente" style="display:none"><svg width="18" height="18"><use href="#i-shield"/></svg> Panel Docente</button>
+
+    <div class="sidebar-progress">
+      <h4>Progreso del módulo</h4>
+      <div class="progress-track"><div class="progress-fill js-progress-fill" style="width:0%"></div></div>
+      <small class="js-progress-text">0% completado</small>
+    </div>
+  </aside>
+
+  <main class="main-content" id="mainContent">
+
+    <!-- ---------- INICIO ---------- -->
+    <section class="view" id="view-inicio">
+      <div class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Programa de Enfermería · UCEVA</p>
+          <h1 id="heroGreeting">Valoración del paciente con heridas crónicas</h1>
+          <p>Aquí encontrarás la información esencial para valorar a una persona con una herida crónica: la historia clínica y los factores que retrasan la cicatrización, la causa de la herida, la medición del lecho y su seguimiento con la escala RESVECH 2.0, apoyados en recursos, evidencia científica y casos clínicos.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-goto="programacion">Ver programación</button>
+            <button class="btn btn-outline" data-goto="recursos">Ir a recursos</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-grid tight section-gap">
+        <div class="card stat-card"><div class="stat-icon"><svg width="20" height="20"><use href="#i-book"/></svg></div><div><div class="stat-value" id="statSesiones">0/8</div><div class="stat-label">Sesiones revisadas</div></div></div>
+        <div class="card stat-card"><div class="stat-icon blue"><svg width="20" height="20"><use href="#i-library"/></svg></div><div><div class="stat-value" id="statRecursos">0</div><div class="stat-label">Recursos revisados</div></div></div>
+        <div class="card stat-card"><div class="stat-icon"><svg width="20" height="20"><use href="#i-case"/></svg></div><div><div class="stat-value" id="statCasos">0/2</div><div class="stat-label">Casos clínicos revisados</div></div></div>
+      </div>
+
+      <div class="home-grid section-gap">
+        <div class="card">
+          <h3 style="margin-bottom:12px">📣 Anuncios y novedades</h3>
+          <div id="announcementList"></div>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:12px">Accesos rápidos</h3>
+          <div class="quick-links">
+            <button class="btn btn-outline btn-block" data-goto="recursos">📂 Ingreso a recursos</button>
+            <button class="btn btn-outline btn-block" data-goto="biblioteca">📚 Biblioteca científica</button>
+            <button class="btn btn-outline btn-block" data-goto="resvech">📏 Escala RESVECH 2.0</button>
+            <a class="btn btn-outline btn-block" href="https://drive.google.com" target="_blank" rel="noopener">📁 Google Drive</a>
+            <button class="btn btn-outline btn-block" data-goto="contacto">✉️ Contactar al docente</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card section-gap">
+        <h3 style="margin-bottom:12px">Continuar donde quedé</h3>
+        <div id="continueList" class="card-grid tight"></div>
+      </div>
+    </section>
+
+    <!-- ---------- PRESENTACIÓN ---------- -->
+    <section class="view" id="view-presentacion">
+      <div class="view-header"><div><p class="eyebrow">Módulo I · Heridas</p><h2>Presentación</h2><p>Qué vas a encontrar en esta página y cómo recorrerla.</p></div></div>
+      <div class="card-grid">
+        <div class="card"><h3>Qué vas a aprender</h3><p class="muted mt8">A valorar de forma integral a la persona con una herida crónica: sus antecedentes y factores de riesgo, la causa de la lesión, las características del lecho, los bordes, el exudado y la piel perilesional, y a medir su evolución con un instrumento validado.</p></div>
+        <div class="card"><h3>Por qué es importante</h3><p class="muted mt8">Una herida crónica no cicatriza si no se identifica y se corrige lo que la mantiene abierta. Una buena valoración es el punto de partida de un plan de cuidados seguro, medible y humanizado.</p></div>
+        <div class="card"><h3>Competencias</h3><p class="muted mt8">Valorar con juicio clínico, registrar con precisión, priorizar problemas, aplicar la evidencia científica y educar a la persona y a su cuidador para el autocuidado.</p></div>
+        <div class="card"><h3>Metodología</h3><p class="muted mt8">Clases presenciales cada martes, lectura de recursos y artículos, análisis de casos clínicos y práctica autónoma con la escala RESVECH 2.0 y su simulador.</p></div>
+        <div class="card"><h3>Duración</h3><p class="muted mt8"><strong id="durTotal">48 horas</strong>: <span id="durPres">32</span> horas presenciales y <span id="durAut">16</span> horas de aprendizaje autónomo, en <span id="durSes">8</span> sesiones semanales.</p></div>
+        <div class="card"><h3>Cómo recorrer la página</h3><p class="muted mt8">Empieza por la Programación, revisa los Recursos de cada sesión, profundiza en la Biblioteca científica, practica con los Casos clínicos y la escala RESVECH, y organiza tu estudio en el Calendario.</p></div>
+      </div>
+    </section>
+
+    <!-- ---------- OBJETIVO ---------- -->
+    <section class="view" id="view-objetivo">
+      <div class="view-header"><div><p class="eyebrow">Módulo I · Heridas</p><h2>Objetivo de aprendizaje</h2></div></div>
+      <div class="card">
+        <p class="eyebrow">Objetivo general</p>
+        <p class="lead-text">Al finalizar el módulo, el estudiante <strong>integrará</strong> los fundamentos científicos, el razonamiento clínico y la práctica basada en la evidencia para <strong>valorar, prevenir, tratar y hacer seguimiento</strong> a personas con heridas crónicas y ostomías, aplicando el proceso de enfermería, el juicio clínico y los principios de seguridad del paciente con un enfoque humanizado.</p>
+        <hr class="sep">
+        <p class="eyebrow">Objetivos específicos — el estudiante será capaz de:</p>
+        <ol class="obj-list">
+          <li>Realizar una valoración integral de la persona con herida crónica, identificando los factores sistémicos y locales que retrasan la cicatrización.</li>
+          <li>Reconocer la causa de la herida (presión, pie diabético, insuficiencia venosa o arterial) a partir de los hallazgos clínicos.</li>
+          <li>Medir y describir la herida y registrar su evolución con la escala RESVECH 2.0.</li>
+          <li>Identificar los signos de infección y biopelícula y decidir la preparación del lecho de la herida.</li>
+          <li>Formular un plan de cuidados con metas medibles y educar a la persona y su cuidador para el autocuidado.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ---------- PROGRAMACIÓN ---------- -->
+    <section class="view" id="view-programacion">
+      <div class="view-header"><div><p class="eyebrow">Primer semestre 2027</p><h2>Programación</h2><p>Una clase semanal, todos los martes. Haz clic en cada sesión para ver objetivos, contenido, actividad y material.</p></div></div>
+      <div class="timeline" id="sessionsTimeline"></div>
+    </section>
+
+    <!-- ---------- RECURSOS ---------- -->
+    <section class="view" id="view-recursos">
+      <div class="view-header"><div><p class="eyebrow">Aprendizaje</p><h2>Recursos</h2><p>Videos, guías, libros, artículos, infografías y podcasts. Los videos, infografías y podcasts se ven o escuchan aquí mismo.</p></div></div>
+      <div class="tabs" id="resourceTabs"></div>
+      <div class="card-grid" id="resourcesGrid"></div>
+    </section>
+
+    <!-- ---------- SESIONES DE CLASE ---------- -->
+    <section class="view" id="view-clases">
+      <div class="view-header"><div><p class="eyebrow">Aprendizaje</p><h2>Sesiones de clase</h2><p>Abre las diapositivas de cada clase en pantalla o en Canva.</p></div></div>
+      <div class="card-grid" id="clasesGrid"></div>
+    </section>
+
+    <!-- ---------- BIBLIOTECA ---------- -->
+    <section class="view" id="view-biblioteca">
+      <div class="view-header"><div><p class="eyebrow">Aprendizaje</p><h2>Biblioteca científica</h2><p>Un artículo o documento de consenso actualizado por cada tema.</p></div></div>
+      <div class="tabs" id="biblioFilters"></div>
+      <div class="card-grid" id="biblioGrid"></div>
+    </section>
+
+    <!-- ---------- CASOS ---------- -->
+    <section class="view" id="view-casos">
+      <div class="view-header"><div><p class="eyebrow">Aprendizaje</p><h2>Casos clínicos</h2><p>Casos para practicar la valoración. Lee los datos, responde las preguntas y aplica RESVECH 2.0.</p></div></div>
+      <div class="card-grid" id="casosGrid"></div>
+    </section>
+
+    <!-- ---------- RESVECH ---------- -->
+    <section class="view" id="view-resvech">
+      <div class="view-header"><div><p class="eyebrow">Aprendizaje</p><h2>Escala RESVECH 2.0</h2><p>Resultados Esperados de la Valoración y Evolución de la Cicatrización de las Heridas Crónicas.</p></div>
+        <a class="btn btn-primary" id="resvechSimLink" href="#" target="_blank" rel="noopener">Abrir simulador RESVECH ↗</a></div>
+      <div class="resvech-intro card-grid">
+        <div class="card"><h3>Qué mide</h3><p class="muted mt8">Convierte lo que observas en una cifra comparable. Registras la herida hoy, la vuelves a valorar en el siguiente control y la diferencia te dice si el plan de cuidado funciona. Fue desarrollado por Restrepo-Medrano y Verdú y validado en Colombia.</p></div>
+        <div class="card"><h3>Cómo se interpreta</h3><p class="muted mt8">Seis ítems, puntaje de <strong>0 a 35</strong>. <strong>A mayor puntaje, peor estado de la herida.</strong> Una cifra que baja entre controles indica avance hacia la cicatrización.</p></div>
+        <div class="card"><h3>Qué no mide</h3><p class="muted mt8">Describe la herida, no su causa. La etiología, la perfusión y el estado general de la persona se valoran aparte (ver Sesión 2).</p></div>
+      </div>
+      <div class="resvech-layout section-gap">
+        <div id="resvechForm"></div>
+        <aside class="card resvech-total" id="resvechTotal">
+          <p class="eyebrow">Puntaje total</p>
+          <div class="rv-score"><span id="rvScore">0</span><small>/ 35</small></div>
+          <div class="rv-meter"><div id="rvMeter"></div></div>
+          <p class="muted rv-msg" id="rvMsg">Marca los ítems para calcular.</p>
+          <div class="rv-actions">
+            <button class="btn btn-primary btn-sm" id="rvSave">Guardar en mi calendario</button>
+            <button class="btn btn-ghost btn-sm" id="rvReset">Limpiar</button>
+          </div>
+          <div id="rvHistory"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ---------- CALENDARIO ---------- -->
+    <section class="view" id="view-calendario">
+      <div class="view-header">
+        <div><p class="eyebrow">Organización</p><h2>Calendario</h2><p>Haz clic en un día para programar tus propias actividades de estudio.</p></div>
+        <div class="cal-nav">
+          <button class="btn btn-outline btn-sm" id="calPrev" aria-label="Mes anterior">‹</button>
+          <strong id="calLabel"></strong>
+          <button class="btn btn-outline btn-sm" id="calNext" aria-label="Mes siguiente">›</button>
+          <button class="btn btn-ghost btn-sm" id="calToday">Hoy</button>
+          <button class="btn btn-primary btn-sm" id="calAdd">+ Programar actividad</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cal-legend">
+          <span class="chip green">● Clase</span>
+          <span class="chip blue">● Evento del módulo</span>
+          <span class="chip warn">● Mi actividad</span>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </div>
+      <div class="card section-gap">
+        <h3 style="margin-bottom:10px">Mis próximas actividades</h3>
+        <div id="myEventsList"></div>
+      </div>
+    </section>
+
+    <!-- ---------- FAQ ---------- -->
+    <section class="view" id="view-faq">
+      <div class="view-header"><div><p class="eyebrow">Soporte</p><h2>Preguntas frecuentes</h2></div></div>
+      <div class="card faq-card" id="faqList"></div>
+    </section>
+
+    <!-- ---------- CONTACTO ---------- -->
+    <section class="view" id="view-contacto">
+      <div class="view-header"><div><p class="eyebrow">Soporte</p><h2>Contacta a tu docente</h2></div></div>
+      <div class="session-detail-grid contact-grid">
+        <div class="card center">
+          <div class="avatar-big">👩‍⚕️</div>
+          <h3 id="ctNombre">Yaneth Gómez López</h3>
+          <p class="muted">Docente · Programa de Enfermería</p>
+          <p class="muted mt8" id="ctCorreo">yaneth.gomez@uceva.edu.co</p>
+          <p class="muted" id="ctAtencion">Horario de atención: lunes a viernes, 2:00 – 4:00 p. m.</p>
+          <div class="contact-btns">
+            <a class="btn btn-outline btn-sm" id="ctWhats" href="#" target="_blank" rel="noopener"><svg width="16" height="16"><use href="#i-whatsapp"/></svg> WhatsApp</a>
+            <a class="btn btn-outline btn-sm" id="ctTeams" href="#" target="_blank" rel="noopener"><svg width="16" height="16"><use href="#i-teams"/></svg> Teams</a>
+            <a class="btn btn-outline btn-sm" id="ctMail" href="#"><svg width="16" height="16"><use href="#i-mail"/></svg> Correo</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:14px">Enviar una duda</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label for="cfNombre">Nombre</label><input id="cfNombre" type="text" required></div>
+              <div class="form-group"><label for="cfCorreo">Correo</label><input id="cfCorreo" type="email" required></div>
+            </div>
+            <div class="form-group"><label for="cfAsunto">Asunto</label><input id="cfAsunto" type="text" required></div>
+            <div class="form-group"><label for="cfMensaje">Mensaje</label><textarea id="cfMensaje" required></textarea></div>
+            <button class="btn btn-primary btn-block" type="submit">Enviar por correo</button>
+            <p class="form-hint">Se abrirá tu programa de correo con el mensaje listo para enviar a la docente.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- PERFIL ---------- -->
+    <section class="view" id="view-perfil">
+      <div class="view-header"><div><p class="eyebrow">Mi cuenta</p><h2>Mi perfil</h2></div></div>
+      <div class="session-detail-grid profile-grid">
+        <div class="card center">
+          <div class="avatar-big initials" id="profileAvatarBig">ES</div>
+          <h3 id="profileNameBig">Estudiante UCEVA</h3>
+          <p class="muted" id="profileSemesterBig">Semestre —</p>
+          <button class="btn btn-ghost btn-sm mt8" id="switchUserBtn"><svg width="15" height="15" style="vertical-align:-2px"><use href="#i-logout"/></svg> Cerrar sesión / cambiar de usuario</button>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:14px">Editar información</h3>
+          <form id="profileForm">
+            <div class="form-row">
+              <div class="form-group"><label for="pfNombre">Nombre</label><input type="text" id="pfNombre"></div>
+              <div class="form-group"><label for="pfCorreo">Correo</label><input type="email" id="pfCorreo"></div>
+            </div>
+            <div class="form-group"><label for="pfSemestre">Semestre</label><input type="text" id="pfSemestre"></div>
+            <button class="btn btn-primary" type="submit">Guardar cambios</button>
+          </form>
+          <hr class="sep">
+          <h3 style="margin-bottom:10px">Progreso del módulo</h3>
+          <div class="progress-track big"><div class="progress-fill js-progress-fill" style="width:0%"></div></div>
+          <p class="muted mt8 js-progress-text">0% completado</p>
+          <ul class="progress-detail" id="progressDetail"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PANEL DOCENTE ================= -->
+    <section class="view" id="view-docente">
+      <div class="view-header">
+        <div><span class="teacher-badge"><svg width="14" height="14"><use href="#i-shield"/></svg> PANEL DOCENTE</span><h2 style="margin-top:10px">Administración de la página</h2><p>Edita anuncios, sesiones, recursos, biblioteca, casos y eventos. Luego publica para que todos vean los cambios.</p></div>
+        <button class="btn btn-ghost" id="teacherLogoutBtn"><svg width="16" height="16"><use href="#i-logout"/></svg> Cerrar sesión docente</button>
+      </div>
+      <div class="tabs" id="teacherTabs">
+        <button class="tab-btn active" data-tab="anuncios">Anuncios</button>
+        <button class="tab-btn" data-tab="sesiones">Programación</button>
+        <button class="tab-btn" data-tab="recursos">Recursos</button>
+        <button class="tab-btn" data-tab="biblioteca">Biblioteca</button>
+        <button class="tab-btn" data-tab="casos">Casos clínicos</button>
+        <button class="tab-btn" data-tab="eventos">Calendario</button>
+        <button class="tab-btn" data-tab="config">Configuración y publicar</button>
+      </div>
+      <div id="teacherPanelContent"></div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="app-footer">
+  <div class="footer-grid">
+    <div><div class="brand-logo" style="margin-bottom:10px">UC</div><p>Unidad Central del Valle del Cauca<br>Programa de Enfermería</p></div>
+    <div><h4>Módulo</h4><p>Cuidado de Enfermería del Adulto en Situaciones de Alta Complejidad<br>Valoración de heridas crónicas</p></div>
+    <div><h4>Docente</h4><p>Yaneth Gómez López<br>yaneth.gomez@uceva.edu.co</p></div>
+    <div><h4>Enlaces</h4><p><a href="#/faq">Preguntas frecuentes</a><br><a href="#/contacto">Contacto</a><br><a href="#/docente">Panel docente</a></p></div>
+  </div>
+  <div class="footer-bottom footer-license">
+    <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es" target="_blank" rel="license noopener">
+      <img src="https://licensebuttons.net/l/by-nc/4.0/88x31.png" alt="Licencia Creative Commons BY-NC 4.0" width="88" height="31">
+    </a>
+    <p>© 2026 Yaneth Gómez López. Valoración de heridas crónicas – UCEVA.</p>
+    <p>Este recurso se comparte bajo la licencia <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es" target="_blank" rel="license noopener">Creative Commons Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)</a>.</p>
+    <p>Se permite compartir y adaptar este recurso con reconocimiento de la autoría y sin fines comerciales.</p>
+  </div>
+</footer>
+
+<nav class="bottom-nav">
+  <div class="bn-row">
+    <button class="bn-item" data-route="inicio"><svg width="20" height="20"><use href="#i-home"/></svg>Inicio</button>
+    <button class="bn-item" data-route="recursos"><svg width="20" height="20"><use href="#i-book"/></svg>Recursos</button>
+    <button class="bn-item" data-route="resvech"><svg width="20" height="20"><use href="#i-eval"/></svg>RESVECH</button>
+    <button class="bn-item" data-route="calendario"><svg width="20" height="20"><use href="#i-calendar"/></svg>Calendario</button>
+    <button class="bn-item" data-route="perfil"><svg width="20" height="20"><use href="#i-user"/></svg>Perfil</button>
+  </div>
+</nav>
+
+
+<!-- MODAL: ingreso -->
+<div class="modal-overlay" id="loginModal">
+  <div class="modal">
+    <div class="modal-head"><h3>Ingresar</h3><button class="modal-close" data-close-modal="loginModal" aria-label="Cerrar"><svg width="18" height="18"><use href="#i-close"/></svg></button></div>
+    <div class="modal-body">
+      <div class="role-grid">
+        <button class="role-card" id="loginStudent"><div class="role-icon">🎓</div><strong>Estudiante</strong><span>Consulta la información, los recursos y la escala RESVECH</span></button>
+        <button class="role-card" id="loginTeacherOpen"><div class="role-icon">🛡️</div><strong>Docente</strong><span>Edita el contenido de la página</span></button>
+      </div>
+      <div id="teacherLoginForm" style="display:none;margin-top:18px">
+        <hr class="sep">
+        <div class="form-group"><label for="teacherPassInput">Contraseña docente</label><input type="password" id="teacherPassInput" placeholder="••••••••"></div>
+        <button class="btn btn-primary btn-block" id="teacherPassSubmit"><svg width="16" height="16" style="vertical-align:-3px"><use href="#i-lock"/></svg> Entrar como docente</button>
+        <p class="form-hint">Si olvidaste la contraseña, consulta el archivo LEEME.md del proyecto.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: formularios -->
+<div class="modal-overlay" id="crudModal">
+  <div class="modal wide">
+    <div class="modal-head"><h3 id="crudModalTitle">Nuevo</h3><button class="modal-close" data-close-modal="crudModal" aria-label="Cerrar"><svg width="18" height="18"><use href="#i-close"/></svg></button></div>
+    <div class="modal-body" id="crudModalBody"></div>
+    <div class="modal-foot">
+      <button class="btn btn-danger" id="crudModalDelete" style="display:none;margin-right:auto">Eliminar</button>
+      <button class="btn btn-ghost" data-close-modal="crudModal">Cancelar</button>
+      <button class="btn btn-primary" id="crudModalSave">Guardar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: visor -->
+<div class="modal-overlay" id="viewerModal">
+  <div class="modal wide">
+    <div class="modal-head"><h3 id="viewerTitle">Visor</h3><button class="modal-close" data-close-modal="viewerModal" aria-label="Cerrar"><svg width="18" height="18"><use href="#i-close"/></svg></button></div>
+    <div class="modal-body" id="viewerBody"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/teacher.js"></script>
+</body>
+</html>
