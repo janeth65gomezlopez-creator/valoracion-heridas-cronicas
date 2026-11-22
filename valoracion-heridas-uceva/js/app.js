@@ -667,7 +667,7 @@ $('#searchMobileBtn').addEventListener('click', () => { $('#headerSearch').class
 /* ---------------------------------- Init ---------------------------------- */
 async function init() {
   DB.seed();
-  $('#year').textContent = new Date().getFullYear();
+  const yr = $('#year'); if (yr) yr.textContent = new Date().getFullYear();
   await Promise.race([DB.syncPublished(), new Promise(r => setTimeout(r, 2500))]);
   let role = 'guest'; try { role = sessionStorage.getItem(SESSION_KEY) || 'guest'; } catch (e) {}
   APP.user = { role }; setUserUI();

@@ -144,3 +144,9 @@
   .cal-evt { font-size: .58rem; }
   .viewer-frame { height: 60vh; }
 }
+
+/* ------------------------------ Licencia ------------------------------ */
+.footer-license { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.footer-license p { font-size: .76rem; color: rgba(255,255,255,.7); line-height: 1.55; margin: 0; max-width: 640px; }
+.footer-license p a { color: #bdeccf; text-decoration: underline; }
+.footer-license img { display: block; margin-bottom: 4px; }
